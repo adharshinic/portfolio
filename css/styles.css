@@ -1,0 +1,156 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: #2a2a2a; /* Lighter shade of dark */
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px 20px; /* Added top padding to compensate for fixed header */
+    margin: 10px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bcd4;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.project a:hover {
+    border-bottom: 1px solid #00bcd4;
+}
+
+/* Skills Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #1e1e1e;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2a2a2a; /* Matching the header */
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* About Me Section */
+#about {
+    padding: 80px 20px 20px; /* Adjusting padding for fixed header */
+    margin: 10px auto;
+    max-width: 1000px;
+    background-color: #1e1e1e; /* Matching the dark theme */
+    color: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#about h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    text-align: left; /* Aligns text to the left for a professional look */
+    padding: 20px;
+}
+
+#about p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
